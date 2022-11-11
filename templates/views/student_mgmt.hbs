@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Student Management</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/student_mgmt.css">
+
+    <!--  Boxicons CSS---- -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     
+    <!----Iconscout CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    </head>
+
+    <body>
+        
+    <div class="container">
+        <header>Student Management</header>
+
+        <form action="/student_mgmt" onsubmit="myFunction()" method="post">
+
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gaurdian</label>
+                            <input type="text" placeholder="Enter gaurdian name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Roll Number</label>
+                            <input type="text" placeholder="Enter your Roll No" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Class</label>
+                            <input type="number" placeholder="Enter your class" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Section</label>
+                            <input type="text" placeholder="Enter your section" required>
+                        </div>                        
+
+                        <div class="input-field">
+                            <label>Contact Number</label>
+                            <input type="text" placeholder="Enter your number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Boarding Point</label>
+                            <input type="text" placeholder="Enter boarding point" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Bus Number</label>
+                            <input type="text" placeholder="Enter Bus number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Route Number</label>
+                            <input type="text" placeholder="Enter route number" required>
+                        </div>        
+                        
+                        <button class="sumbit" type="submit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                      
+                </div> 
+            </div>
+
+            
+        </form>
+    </div>
+
+    <script src="js/student_mgmt.js"></script>
+</body>
+</html>
+<script>
+    function myFunction() {
+      alert("The form was submitted");
+    }
+    </script>
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Route Management</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/route.css">
+
+    <!--  Boxicons CSS---- -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     
+    <!----Iconscout CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    </head>
+
+    <body>
+        
+    <div class="container">
+        <header>Route Management</header>
+
+        <form action="/route_mgmt" onsubmit="myFunction()" method="post">
+            <!-- <div class="form first"> -->
+                <div class="details-personal">
+                    <span class="title">Route Information</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Route Number</label>
+                            <input type="number" name="routenum" placeholder="Enter route number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Bus Number</label>
+                            <input type="text" name="busnum" placeholder="Enter bus number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Driver Name</label>
+                            <input type="text" name="dname" placeholder="Enter driver name" required>
+                        </div>
+
+
+                </div>        
+                    <div class="details-route">
+                        <span class="title">Stop Details</span>
+
+                        <div class="input-field">
+                            <label>Stop 1</label>
+                            <input type="text" name="s1name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s1loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 2</label>
+                            <input type="text" name="s2name"placeholder="Enter Stop Name" required>
+                            <input type="text" name="s2loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 3</label>
+                            <input type="text" name="s3name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s3loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 4</label>
+                            <input type="text" name="s4name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s4loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 5</label>
+                            <input type="text" name="s5name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s5loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 6</label>
+                            <input type="text" name="s6name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s6loc" placeholder="Enter Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stop 7</label>
+                            <input type="text" name="s7name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s7loc" placeholder="Enter Location" required>
+                        </div>
+    
+                        <div class="input-field">
+                            <label>Stop 8</label>
+                            <input type="text" name="s8name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s8loc" placeholder="Enter Location" required>
+                        </div>
+    
+                        <div class="input-field">
+                            <label>Stop 9   </label>
+                            <input type="text" name="s9name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s9loc" placeholder="Enter Location" required>
+                        </div>
+    
+                        <div class="input-field">
+                            <label>Stop 10</label>
+                            <input type="text" name="s10name" placeholder="Enter Stop Name" required>
+                            <input type="text" name="s10loc" placeholder="Enter Location" required>
+                        </div>   
+
+                    </div>
+
+                   
+                </div>
+                                        
+                <button class="sumbit" type="submit">
+                    <span class="btnText">Submit</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+                
+
+
+
+                 
+            <!-- </div> -->
+
+            
+        </form>
+    </div>
+    <script>
+        function myFunction() {
+          alert("The form was submitted");
+        }
+        </script>        
+    <script src="js/route.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Student Management</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/bus.css">
+
+    <!--  Boxicons CSS---- -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     
+    <!----Iconscout CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    </head>
+
+    <body>
+        
+    <div class="container">
+        <header>Bus Management</header>
+
+        <form action="/bus_mgmt" onsubmit="myFunction()" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Bus Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Bus Number</label>
+                            <input type="text" name="busnum" placeholder="Enter bus number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name Plate</label>
+                            <input type="text" name="nameplate" placeholder="Enter name plate number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Chasis Number</label>
+                            <input type="text" name="chassis" placeholder="Enter chasis number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>F.C Date</label>
+                            <input type="date" name="fc" placeholder="Enter F.C Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Driver Name</label>
+                            <input type="text" name="dname" placeholder="Enter driver name" required>
+                        </div>                        
+
+                        <div class="input-field">
+                            <label>Route Number</label>
+                            <input type="number" name="rnum" placeholder="Enter route number" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Driver Details</span>
+
+                    <div class="fields">
+                        
+                        <div class="input-field">
+                            <label>Driver Name</label>
+                            <input type="text" name="driname" placeholder="Enter driver name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Employee Number</label>
+                            <input type="number" name="empnum" placeholder="Enter Employee number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>License Number</label>
+                            <input type="number" name="licnum" placeholder="Enter License number" required>
+                        </div>   
+                        
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" name="exp" placeholder="Enter Expiry Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Driver Contact Number</label>
+                            <input type="tel" name="dmobile" placeholder="Enter phone number" required>
+                        </div>
+                        </div>
+                        <button class="sumbit" type="submit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                      
+                </div> 
+            </div>
+
+            
+        </form>
+    </div>
+    <script>
+        function myFunction() {
+          alert("The form was submitted");
+        }
+        </script>
+        
+    <script src="js/bus.js"></script>
+</body>
+</html>
